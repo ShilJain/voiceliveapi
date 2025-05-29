@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
+  output: 'export',
   webpack: (config, { isServer }) => {
     if (isServer) {
       config.resolve.fallback = {
